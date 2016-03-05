@@ -17,13 +17,18 @@ public class DijkstraAlgorithm {
     private Map<Vertex, Vertex> predecessors;
     private Map<Vertex, Integer> distance;
 
+    public static void main(String[] args)
+    {
+        
+    }
+
     public DijkstraAlgorithm(Graph graph)
     {
         this.edges = new ArrayList<Edge>(graph.getEdges());
         this.nodes = new ArrayList<Vertex>(graph.getVertexes());
     }
 
-    public void Execute (Vertex source) {
+    public void execute (Vertex source) {
         settledNodes = new HashSet<Vertex>();
         unsettledNodes = new HashSet<Vertex>();
         distance = new HashMap<Vertex, Integer>();
